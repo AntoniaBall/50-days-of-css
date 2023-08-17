@@ -1,0 +1,9 @@
+.grid {
+    background-color: aqua;
+    display: grid;
+}
+
+.flex {
+    background-color: blue;
+    display: flex;
+}
