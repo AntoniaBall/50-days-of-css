@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background-color: grey;
+    color: #222;
+    margin: 0;
+}
+
+.container {
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-width: 100vh;
+    padding: 50px;
+}
+
+.container.show-nav {
+    transform: rotate(-20deg);
+}
+
+
+
+.circle-container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle {
+    background-color: #ff7979;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: transform 0.5s linear;
+    position: relative;
+    color: white;
+
+}
+
+.circle button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: white;
+}
+
+nav {
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    line-height: 2;
+    font-style: italic; 
+}
+
+nav li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.links i {
+    margin-right: 10px;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li + li {
+    margin-left: 20px;
+}
+
+nav li + li + li {
+    margin-left: 40px;
+}
+
+.show-nav #open {
+    display: none;
+}
+
+.show-nav #close {
+    top: 70%;
+    left: 70%;
+}
+
+.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 2s;
+}
+
+.circle button:focus {
+    outline: none;
+}
+
+#open {
+    left: 60%;
+    top: 60%;
+}
+
+#close {
+    top: 60%;
+    transform: rotate(80deg);
+    transform-origin: top left;
+}
+
+.content img {
+    max-width: 100%;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 70px auto;
+    line-height: 1.5;
+}
