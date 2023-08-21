@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+
+:root {
+    --line-border-fill: #4285F4;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.globalContainer {
+    position: relative;
+    left: 30%;
+    width: 45vw;
+}
+
+.stepContainer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    position: relative;
+}
+
+.progressbar {
+    background-color: grey;
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 100%;
+    left: 0px;
+    z-index: -1;
+}
+
+.stepContainer__step {
+    font-size: 40px;
+    border: 1px solid grey;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 48px;
+    height: 48px;
+    text-align: center;  
+    z-index: 1;
+    transition: 0.4s ease-in;
+}
+
+.active {
+    border-radius: 2em;
+    border: 4px solid var(--line-border-fill);
+    cursor: pointer;
+}
+
+.stepContainer__step::after {
+    background-color: var(--line-border-fill);
+    height: 5px;
+}
+
+.stepContainer__step:hover {
+    border-radius: 2em;
+    border: 4px solid var(--line-border-fill);
+    cursor: pointer;
+}
+
+.buttonsContainer {
+    margin-top: 30px;
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+}
+
+.buttonsContainer_button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 2em;
+    border: 4px solid var(--line-border-fill);
+}
+
+.buttonsContainer_button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--line-border-fill);
+}
+
+.buttonsContainer_button:hover span {
+    color: white;
+}
+
+.buttonsContainer_button span {
+    font-size: 32px;
+    text-align: center;
+    text-decoration: underline;
+}
