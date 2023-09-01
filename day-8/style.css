@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+:root {
+    --bg-color: #1189cf;
+    --form-color: #1e5d81;
+    --cta-color: #7fc6f5;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.container {
+    background-color: var(--bg-color);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.container-form {
+    background-color: var(--form-color);
+    position: fixed;
+    top: 30%;
+    left: 40%;
+    width: 400px;
+    height: 400px;
+    padding: 45px;
+}
+
+.container-form h1 {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin-bottom: 50px;
+
+}
+
+.field label {
+    margin: 0;
+    color: white;
+    transition: transform 1s ease;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid white;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    background: var(--cta-color);
+    border: none;
+    border-radius: 5px;
+}
+
+.cta {
+    color: white;
+}
+
+.cta a {
+    color: var(--cta-color);
+    font-weight: bold;
+}
+
+.checked {
+    transform: translateY(-25px);
+    transition: transform 1s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        position: relative;
+    }
+
+    .container-form {
+        position: fixed;
+        left: 8%;
+        top: 12%;
+        width: 60vw;
+    }
+
+    .container-form h1 {
+        font-size: 32px;
+    }
+}
