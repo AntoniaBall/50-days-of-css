@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #15bee8;
+    position: relative;
+}
+
+h1 {
+    color: white;
+}
+
+section {
+    background-color: white;
+    gap: 20px;
+    position: absolute;
+    width: 50vw;
+    height: 30vh;
+    top: 17vw;
+    left: 25vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;;
+}
+
+section h1 {
+    color: grey;
+    font-weight: bold;
+    text-align: center;
+}
+
+.jokeContent {
+    font-size: 16px;
+}
+
+button {
+    appearance: none;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(to right, #0889d4 50%, #15bee8 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease;
+    border: 1px solid #15bee8;
+    font-weight: bold;
+    font-size: 20px;
+    color: grey;
+    padding: 10px;
+    width: 50vw;
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-position: left bottom;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 50vw;
+        height: 44vh;
+        position: fixed;
+        top: 50vw;
+        left: 20vw;
+    }
+
+    button {
+        font-size: 16px;
+        width: 50vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+    .container {
+        top: 35vw;
+    }
+}
